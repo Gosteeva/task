@@ -384,6 +384,10 @@ header {
   width: inherit;
 }
 
+.left-header .head-left-wl {
+  float: left;
+}
+
 .left-header .header-offer i, .left-header .header-offer h4 {
   display: inline;
 }
