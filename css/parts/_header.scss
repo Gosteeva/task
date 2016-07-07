@@ -7,11 +7,18 @@ header {
 .left-header {
 	float: left;
 	padding: 15px 0px;
+  @media screen and (max-width: 1250px) {
+    float: none;
+    text-align: center;
+  }
 	.header-logo {
 		width: 100px;
 		float: left;
-		// TODO: margin
 		margin: 0px 20px;
+    @media screen and (max-width: $break-small) {
+      float: none;
+      display: inline-block;
+    }
 		a {
 			width: inherit;
 			.logo_img{
@@ -21,6 +28,9 @@ header {
 	}
   .head-left-wl {
 		float: left;
+    @media screen and (max-width: $break-small) {
+      float: none;
+    }
 	}
 	.header-offer {
 		i, h4 {
@@ -72,7 +82,11 @@ nav {
 .right-header {
 	float: right;
 	padding: 15px 0px;
-	.header-menu {
+  @media screen and (max-width: $break-small) {
+    float: none;
+    text-align: center;
+  }
+  .header-menu {
 		ul {
 			display: inline-block;
 			li {
@@ -103,6 +117,11 @@ nav {
 		color: #878f58;
 		background-color: #f3efe4;
 		border-radius: 10px;
+    @media screen and (max-width: $break-small) {
+      float: none;
+      margin: auto;
+      margin-top: 15px;
+    }
 		input {
 			font-family: Georgia;
 			font-size: 12px;
